@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head th:replace="fragments/template :: head(title='Maps')">
+    <title>Maps</title>
+
+</head>
+<body>
+<div id="map"></div>
+
+
+<script src="/map.js"></script>
+<script th:src="@{${'https://maps.googleapis.com/maps/api/js?key=' + @environment.getProperty('api_key') + '&callback=initMap'}}"
+        async defer></script>
+
+<div th:replace="fragments/template :: body-scripts"></div>
+</body>
+</html>

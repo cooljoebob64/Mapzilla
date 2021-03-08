@@ -1,5 +1,5 @@
-application.properties
-src/main/resources/application.properties
+#application.properties
+#src/main/resources/application.properties
 
 
 # Created by https://www.toptal.com/developers/gitignore/api/java,intellij
@@ -172,3 +172,4 @@ out/
 
 ### VS Code ###
 .vscode/
+/src/main/resources/application-local.properties
