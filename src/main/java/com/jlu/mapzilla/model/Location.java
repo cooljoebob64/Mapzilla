@@ -8,4 +8,9 @@ public class Location {
     private String state;
     private String lat;
     private String lng;
+
+    public Location(){
+        this.city = "Shreveport";
+        this.state = "LA";
+    }
 }

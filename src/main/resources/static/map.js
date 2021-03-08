@@ -1,13 +1,12 @@
-var map;
-var coords = {lat: 39.9612, lng: -82.9988};
+let map;
 function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
         center: coords,
-        zoom: 10,
+        zoom: 12,
         scrollwheel: false
     });
-    var zilla = "/zilla.png"
-    var marker = new google.maps.Marker({
+    let zilla = "/zilla.png"
+    let marker = new google.maps.Marker({
         position: coords,
         map: map,
         icon: {
@@ -17,9 +16,8 @@ function initMap() {
         animation: google.maps.Animation.BOUNCE
     });
 
-    var contentString = '<h2>Columbus, OH</h2> <p>Where your dreams come true.</p>';
-
-     var infowindow = new google.maps.InfoWindow({
+let contentString = '<h2>' + city + ', ' + state + ', where your dreams come true!</h2>';
+     let infowindow = new google.maps.InfoWindow({
        content: contentString
      });
 
