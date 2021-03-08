@@ -15,7 +15,7 @@ public class MapServiceImpl implements MapService{
     @Override
     public void addCoordinates(Location location) {
         String url = "https://maps.googleapis.com/maps/api/geocode/json?address=" +
-                location.getCity() + "," + location.getState() + "&key=" + apiKey;
+                location.getCity() + "," + location.getState() + "GA&key=" + apiKey;
 
         RestTemplate restTemplate = new RestTemplate();
         GeocodingResponse response = restTemplate.getForObject(url, GeocodingResponse.class);
